@@ -34,4 +34,19 @@ a = 20/10 = 2.0 #simple divison results in a float
 b = 22//10 = 2  #rounds down to the neareste whole number
 c = 23 % 10 = 3 #outputs the leftover amount 
 
-## digits
+import math
+d = float(input())
+f = float(input())
+val = math.sqrt(math.fabs(math.pow(d,2)+f))
+
+import random
+print(random.random()) #random float between 0 and 1
+print(random.randrange(3)) #random int between 0 and int defined range - 1 
+print(random.randint(12,20)) #sets a range between min and max inclusive
+
+#character magic
+my_string = 'This is a \n \'normal\' string'
+raw_string = r'This is a \n \'normal\' string'
+
+#encoding chars
+ord('a') # = 97
