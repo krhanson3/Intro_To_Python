@@ -16,7 +16,7 @@ print('your name is', name)
 #changes string input into integer & variable assignment 
 num1 = int(input('enter a number\n')) 
 num2 = int(input('enter another number'))
-#math
+#basic expression
 print("the numbers", num1, "and", num2,"added is", num2+num1)
 
 #syntax 
