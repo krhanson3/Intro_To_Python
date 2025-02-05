@@ -10,3 +10,6 @@ intro.py
   - arithmetic operations
   - expressions
   - math
+intro_lab_practice
+- contains practice lab assignments from 
+  intro ^^ topics 
