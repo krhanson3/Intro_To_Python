@@ -26,3 +26,29 @@ print(fruits) #['apple', 'banana', 'mango', 'orange']
 fruits.pop() #remove the last item from the list or a specific index
 print(fruits) #['apple', 'banana', 'mango']
 print(fruits.index("banana")) #1, returns the index of the first occurrence of the value
+
+numbers = [1, 2, 3, 4, 5]
+max_num = max(numbers) #5, use the max function to find the max value
+
+#tuple basics, once created, you cannot change the elements in the list
+fruits_tuple = ("apple", "banana", "mango")
+#named tuple
+from collections import namedtuple
+Car = namedtuple("Car", ["make", "model", "year"])
+car1 = Car("Toyota", "Camry", 2020)
+
+#set basics, unordered collection of unique elements
+nums = set([1, 2, 3, 4, 5, 5, 5]) #set([1, 2, 3, 4, 5]) , removes duplicates
+nums1 = {6, 7, 7, 8, 9}
+nums.add(10) #add an element to the set
+nums.remove(5) #remove an element from the set
+nums.pop() #remove an arbitrary element from the set
+print(nums) #{1, 2, 3, 4, 10}
+
+#dictionary basics
+# dict = { key:value pairs }
+person = {"name": "John", "age": 30, "city": "New York"}
+print(person["name"]) #John
+person['country'] = "USA" #add a new key value pair
+person["name"] = "Jane" #update the value of a key
+del person["city"] #remove a key value pair
