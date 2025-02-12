@@ -12,6 +12,18 @@ last_char = basic[-1] #! negative numbers index from the end
 #string concatenation
 new_string = basic + ' I am here' #Hello, World! I am here
 
+#string formatting 
+number = 6
+amount = 32.50
+print(f'{number} burritos cost ${amount:.1f}')
+print(f'{2**2=},{2**4=}') #2**2=4,2**4=16
+print(f'{7600:,d}') #7,600 comma separator
+print(f'{4:03d}') #004 leading zeros
+print(f'{4:b}') #100 binary 
+print(f'{31:x}') #1f hex 
+print(f'{44:e}') #4.400000e+01 scientific notation
+
+
 #list basics
 fruits = ["apple", 20, "$20"] #lists can contain multiple data types
 print(fruits[0]) #apple
@@ -52,3 +64,14 @@ print(person["name"]) #John
 person['country'] = "USA" #add a new key value pair
 person["name"] = "Jane" #update the value of a key
 del person["city"] #remove a key value pair
+
+#Type Conversions
+num = 10 #int
+num2 = 0.5 #float
+num + num = 10 #int
+num + num2 = 10.5 #float
+
+num = str(num) #convert to string
+num3 = int(num2) #convert to int
+num4 = float(num3) #convert to float
+
