@@ -75,3 +75,8 @@ num = str(num) #convert to string
 num3 = int(num2) #convert to int
 num4 = float(num3) #convert to float
 
+#String Formatting
+print(f'{2**2=}') #2**2=4
+two_power_two = 2**2
+print(f'{two_power_two=}') #two_power_two=4
+print(f'{{2**2}}') # {2**2} double brackets print the brackets 
