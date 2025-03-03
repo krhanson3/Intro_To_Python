@@ -68,3 +68,14 @@ animals_string = ("Lane's favorite exhibit to look at when she goes to the zoo i
 # format() replaces the curly braces in a string with variables.
 new_str = animals_string.format(animal, adjective1)
 print(new_str)
+
+#conditional expressions
+# expr_when_true if condition else expr_when_false
+# good practice is to restrict usage of conditional expressions to an assignment statement
+if(y == 2):
+    x = 10
+else:
+    x = 9*x
+#can be written as
+x = 10 if (y == 2) else 9*x
+#only use when both branches update the same variable
