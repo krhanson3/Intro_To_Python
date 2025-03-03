@@ -9,7 +9,13 @@ intro.py
 - expressions
   - arithmetic operations
   - expressions
-  - math
-intro_lab_practice
-- contains practice lab assignments from 
-  intro ^^ topics 
+  - math 
+
+var_types.py
+- string basics & formatting
+- lists, sets, dicts
+
+branching.py
+- if - else branches 
+- relational, logical, membership, identity operators
+- conditional expressions
