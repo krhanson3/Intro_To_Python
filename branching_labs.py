@@ -100,3 +100,35 @@ elif service2 == '-':
     print('Service 2: No service')
 
 print(f'\nTotal: ${total}')
+
+
+#seasons based on month and day 
+input_month = input()
+input_day = int(input())
+
+months_31 = ['January', 'March', 'May', 'July', 'August', 'October', 'December']
+months_30 = ['April', 'June', 'September', 'November']
+months_28 = ['February']
+months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+if (input_month not in months) or (input_day < 1 or input_day > 31):
+    print('Invalid')
+    exit()
+elif (input_month in months_31) and (1 < input_day > 31):
+    print('Invalid')
+    exit()
+elif (input_month in months_30) and (1 < input_day > 30):
+    print('Invalid')
+    exit()
+elif (input_month in months_28) and (1 < input_day > 28):
+    print('Invalid')
+    exit()
+
+if (input_month == 'March ' and input_day >= 20) or (input_month == 'April') or (input_month == 'May') or (input_month == 'June' and input_day < 21):
+    print('Spring')
+elif (input_month == 'June' and input_day >= 21) or (input_month == 'July') or (input_month == 'August') or (input_month == 'September' and input_day < 22):
+    print('Summer')
+elif (input_month == 'September' and input_day >= 22) or (input_month == 'October') or (input_month == 'November') or (input_month == 'December' and input_day < 21):
+    print('Autumn')
+elif (input_month == 'December' and input_day >= 21) or (input_month == 'January') or (input_month == 'February') or (input_month == 'March' and input_day < 20):
+    print('Winter')
