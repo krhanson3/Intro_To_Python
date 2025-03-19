@@ -19,3 +19,6 @@ branching.py
 - if - else branches 
 - relational, logical, membership, identity operators
 - conditional expressions
+
+loops.py
+- while loops with conditionals
