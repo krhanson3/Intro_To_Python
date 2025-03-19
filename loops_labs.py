@@ -18,3 +18,26 @@ while triangle_height > 0:
     triangle_string = triangle_string + triangle_char + ' '
     #decreasing the count of triangle_height by 1
     triangle_height -= 1
+
+#strengthening of a password
+word = input()
+password = ''
+
+i=0 #count to loop through chars in word
+while i < len(word): 
+    if word[i] == 'i':
+       password += '1'
+    elif word[i] == 'a':
+        password += '@'
+    elif word[i] == 'm':
+        password += 'M'
+    elif word[i] == 'B':
+        password += '8'
+    elif word[i] == 's':
+        password += '$'
+    else: 
+        password += word[i]
+    i += 1
+
+password += '!'
+print(password)
