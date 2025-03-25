@@ -41,3 +41,28 @@ while i < len(word):
 
 password += '!'
 print(password)
+
+
+# Given a line of text as input, output the number of chars 
+# excluding spaces, periods, exclamation points, or commas
+# including other characters (Ex: "r", "2", "?").
+user_text = input()
+count = 0; 
+for i in range(len(user_text)): #loop through the characters in user_text
+    if user_text[i] != ' ' and user_text[i] != '.' and user_text[i] != '!' and user_text[i] != ',':
+        count += 1
+print(count)
+
+# Write a program that reads an integer n (the count of following numbers), 
+# then n integers, and finally a threshold. Output all numbers ≤ the threshold.
+num_input = int(input()) 
+
+num_list = []
+for _ in range(num_input):  
+    num_list.append(int(input()))
+
+threshold = int(input())
+
+for num in num_list: 
+    if num <= threshold:
+        print(f'{num},', end='')
