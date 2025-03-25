@@ -22,3 +22,4 @@ branching.py
 
 loops.py
 - while loops with conditionals
+- for loops with ranges & nested loops
