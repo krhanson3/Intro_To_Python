@@ -1,5 +1,4 @@
 #READ_ME
-
 This repo contains notes from CS 223 at the University of Alabama. 
 
 intro.py 
